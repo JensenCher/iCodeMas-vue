@@ -2,10 +2,11 @@
 import { RouterLink } from "vue-router";
 </script>
 <template>
-  <header>
+  <header class="max-w-7xl flex flex-col items-center justify-center w-full mx-auto">
+    <RouterLink to="/" class="text-xl font-bold p-3 rounded-xl">iCodeMas</RouterLink>
     <nav class="">
       <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/faq">FAQ</RouterLink>
       <RouterLink to="/shop">Shop</RouterLink>
     </nav>
   </header>
@@ -17,16 +18,10 @@ header {
   max-height: 100vh;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
 nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -50,11 +45,6 @@ nav a:first-of-type {
 }
 
 @media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-  }
-
   .logo {
     margin: 0 2rem 0 0;
   }
@@ -62,9 +52,7 @@ nav a:first-of-type {
   nav {
     text-align: left;
     font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+    padding: 0.5rem 0;
   }
 }
 </style>

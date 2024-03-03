@@ -5,8 +5,7 @@ import Banner from "@/components/home/Banner.vue";
 <template>
   <main>
     <div class="flex flex-col items-center gap-5 overflow-hidden">
-      <h1 class="text-xl md:text-3xl font-semibold mt-5">Welcome to iCodeMas {{ new Date().getFullYear() }}</h1>
-      <div class="max-w-7xl overflow-hidden">
+      <div class="max-w-7xl overflow-hidden rounded-t-3xl">
         <Banner />
       </div>
     </div>

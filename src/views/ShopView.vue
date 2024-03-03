@@ -38,7 +38,7 @@ interface ProductProps {
 <template>
   <main class="flex flex-col items-center gap-5 pb-20">
     <h1 class="font-bold text-xl">Shop</h1>
-    <div class="">
+    <div class="max-w-7xl mx-auto">
       <transition-group>
         <Product
           v-for="(product, index) in products"
