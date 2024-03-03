@@ -1,9 +1,9 @@
 import { comments, posts, users } from "./schema";
 import { drizzle } from "drizzle-orm/neon-http";
-import { neon } from "@neondatabase/serverless";
+import { neon, type NeonQueryFunction } from "@neondatabase/serverless";
 import * as schema from "./schema";
 
-const sql = neon(import.meta.env.VITE_NEON_DATABASE_URL);
+const sql: NeonQueryFunction<boolean, boolean> = neon(import.meta.env.VITE_NEON_DATABASE_URL);
 
 const db = drizzle(sql, {
     schema,
